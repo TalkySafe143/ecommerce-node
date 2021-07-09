@@ -30,7 +30,7 @@
     "test": "mocha --exit",
     "test:coverage": "nyc npm run test",
     "build": "cd public/assets && cleancss -o main.min.css main.css",
-    "start": "cross-env NODE_ENV=production node index"
+    "start": "cross-env NODE_ENV=production node index.js"
   },
   "keywords": [],
   "author": "Sebastian Galindo <sebastian.galindo143@gmail.com>",
