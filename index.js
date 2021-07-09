@@ -40,5 +40,5 @@ app.use(middlewares.clientErrors);
 app.use(middlewares.errorHandler);
 
 const server = app.listen(3000, () => {
-    console.log(`Listening http://localhost:${server.address().port}`);
+    console.log(`Listening in port: ${process.env.PORT || 3000}`);
 });
