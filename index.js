@@ -39,6 +39,6 @@ app.use(middlewares.logErrors);
 app.use(middlewares.clientErrors);
 app.use(middlewares.errorHandler);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Listening in port: ${process.env.PORT || 3000}`);
 });
